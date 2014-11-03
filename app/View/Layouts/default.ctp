@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('wg.normalize');	// estilo de normalizacao de browsers
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
