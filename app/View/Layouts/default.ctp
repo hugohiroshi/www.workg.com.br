@@ -26,8 +26,13 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
 		echo $this->Html->meta(array('name' => 'Author', 'content' => 'WorkGroup'));
 		echo $this->Html->meta(array('name' => 'google-site-verification', 'content' => 'bAGhvWxU55dhKndhZVMSqLXS_D5fsdMGM3K6d6OgWNQ'));
 		
-		echo $this->Html->css('cake.generic');	// estilo de normalizacao de browsers
-
+		echo $this->Html->css('bootstrap');	// estilo de normalizacao de browsers
+                echo $this->Html->css('carousel');
+                echo $this->Html->css('workg-style');
+                
+                echo $this->Html->script('jquery');
+                echo $this->Html->script('bootstrap');
+                
 		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -35,6 +40,113 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
 	?>
 </head>
 <body>
+    
+    <!-- COMEÇA MENU -->
+    <div class="navbar-wrapper">
+      <div class="container header-container">
+
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="#">WorkGroup </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Produtos e Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#contact">Sobre</a></li>
+                <li><a href="#contact">Parceiros</a></li>
+                <li><a href="#contact">Trabalhe Conosco</a></li>                
+               <!-- MENU DROPDOWN
+                    <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                       <ul class="dropdown-menu" role="menu">                    
+                         <li><a href="#">Another action</a></li>
+                         <li><a href="#">Something else here</a></li>
+                         <li class="divider"></li>
+                         <li class="dropdown-header">Nav header</li>
+                         <li><a href="#">Separated link</a></li>
+                         <li><a href="#">One more separated link</a></li>
+                       </ul>
+                     </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+    <!-- TERMINA MENU -->
+    
+    <!-- COMEÇA CARROSSEL -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- INDICADORES DO SLIDE 
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        TERMINA INDICADORES DO SLIDE -->
+        
+        <!-- CONTEUDO DO SLIDE -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TERMINA CONTEUDO DO SLIDE -->
+        
+        <!-- SETAS DE PREVIOUS E NEXT -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>    
+    <!-- TERMINA CARROSSEL -->
+    
+    
+    
+    
+    
+    
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($Description, 'http://cakephp.org'); ?></h1>
