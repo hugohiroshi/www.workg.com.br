@@ -1,11 +1,135 @@
+/* AJUSTA MENU RESPONSIVO */
 @media (min-width: 768px) and (max-width: 992px) {
    .header-container {
        width: 100%;
+       background-color: #222;
    }
 }
 
 @media (min-width: 992px) {
    .header-container {
-       width: 100%;
+       width: 100%;      
+       background-color: #222;
    }
+}
+
+
+
+
+/* FOOTER */
+#footer2{
+    width: 100%;    
+    background: #1a6a9f;   
+    padding-bottom: 40px;
+}
+
+#footer2 .content-footer{
+    color: #ffffff;        
+}
+
+#footer2 .content-footer p{
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+#footer2 .content-footer h2{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#footer2 .content-footer .endereco{
+    border-left: 2px groove #3278b3; 
+    margin-top: 40px;
+}
+
+#footer2 .content-footer .contato{
+    border-left: 2px groove #3278b3;
+    margin-top: 40px;
+}
+
+#footer2 .content-footer .botao-cadastro{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #134d75;
+    background: #1e77b1;
+}
+
+#footer2 .content-footer .botao-cadastro:hover{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #134d75;
+    background:#428bca;
+}
+
+#footer2 .content-footer .campo-email{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #1a6a9f;
+    background: #1e77b1;
+    color: #fff;
+    padding-left: 5px;
+}
+
+#footer2 .content-footer .campo-email:hover{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #428bca;
+    background: #1e77b1;
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* TROCA A COR DO PLACEHOLDER */
+::-webkit-input-placeholder { /* WebKit browsers */
+color: #428bca;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #428bca;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #428bca;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #428bca;
+}
+
+#footer3{
+    width: 100%;    
+    background: #134d75; 
+    border-top: 2px groove #206aa1;
+}
+#footer3 .content-footer .copyright{      
+    height: 40px;
+}
+
+#footer3 .content-footer .copyright p{       
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+@media (min-width: 960px) {
+    
+    .main-container {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+/* CSS HUGO */
+.navbar {
+    margin-bottom: 0;
+}
+
+@media (min-width: 960px) {
+    
+    .main-container {
+        width: 960px;
+        margin: 0 auto;
+    }
 }

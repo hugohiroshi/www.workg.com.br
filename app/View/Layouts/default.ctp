@@ -38,48 +38,57 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+    
 </head>
 <body>
     
     <!-- COMEÇA MENU -->
     <div class="navbar-wrapper">
-      <div class="container header-container">
+        <div class="header-container">
+            
+            <div class="main-container">
+                
+                <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <div class="container">
+                      <div class="navbar-header">
+                            <!-- BOTÃO DO MENU RESPONSIVO -->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>                
+                            <!-- TERMINA BOTÃO DO MENU RESPONSIVO -->
+                            <a class="navbar-brand" href="#">WorkGroup </a>                
+                      </div>
+                      <div id="navbar" class="navbar-collapse collapse">                
+                          <ul class="nav navbar-nav">
+                              <li class="active"><a href="#">Home</a></li>
+                              <li><a href="#about">Produtos e Serviços</a></li>
+                              <li><a href="#contact">Contato</a></li>
+                              <li><a href="#contact">Sobre</a></li>
+                              <li><a href="#contact">Parceiros</a></li>
+                              <li><a href="#contact">Trabalhe Conosco</a></li>                
+                              <!-- MENU DROPDOWN
+                                  <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                     <ul class="dropdown-menu" role="menu">                    
+                                       <li><a href="#">Another action</a></li>
+                                       <li><a href="#">Something else here</a></li>
+                                       <li class="divider"></li>
+                                       <li class="dropdown-header">Nav header</li>
+                                       <li><a href="#">Separated link</a></li>
+                                       <li><a href="#">One more separated link</a></li>
+                                     </ul>
+                                   </li> -->
+                          </ul>                      
+                      </div>
+                    </div>
+                  </nav>
+                
+            </div>
 
-        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#">WorkGroup </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">Produtos e Serviços</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="#contact">Sobre</a></li>
-                <li><a href="#contact">Parceiros</a></li>
-                <li><a href="#contact">Trabalhe Conosco</a></li>                
-               <!-- MENU DROPDOWN
-                    <li class="dropdown">
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                       <ul class="dropdown-menu" role="menu">                    
-                         <li><a href="#">Another action</a></li>
-                         <li><a href="#">Something else here</a></li>
-                         <li class="divider"></li>
-                         <li class="dropdown-header">Nav header</li>
-                         <li><a href="#">Separated link</a></li>
-                         <li><a href="#">One more separated link</a></li>
-                       </ul>
-                     </li> -->
-              </ul>
-            </div>
-          </div>
-        </nav>
+        
 
       </div>
     </div>
@@ -169,5 +178,35 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+    
+       
+        <div id="footer2" class="col-md-12">            
+            <div class="content-footer">                
+                    <div class="col-md-5">
+                        <h2>Gostaria de receber nossas Newsletter ?</h2>
+                        <form action="" method="post">
+                            <input class="campo-email" type="text" name="email" placeholder="E-mail" />
+                            <input class="botao-cadastro" type="button" name="cadastro" value="Cadastre-se" />
+                        </form>
+                    </div>
+                    <div class="endereco col-md-2">                 
+                        <p>Endereço</p>
+                        <p>Rua Salim Ferez, 251 <br />
+                        Campinas / SP</p>
+                    </div>  
+                    <div class="contato col-md-2">
+                        <p>Contato</p>
+                        <p>Telefone: 55(19)9999-9999<br />
+                           E-mail: email@email.com</p>
+                    </div>     
+            </div> 
+        </div>   
+        <div id="footer3" class="col-md-12">
+            <div class="content-footer">
+                <div class="copyright col-md-12">
+                    <p>©copyright</p>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
