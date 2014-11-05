@@ -113,13 +113,6 @@ color: #428bca;
     margin-top: 10px;
 }
 
-@media (min-width: 960px) {
-    
-    .main-container {
-        width: 960px;
-        margin: 0 auto;
-    }
-}
 
 /* CSS HUGO */
 .navbar {
