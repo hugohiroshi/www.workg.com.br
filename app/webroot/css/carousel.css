@@ -18,12 +18,14 @@ body {
     right: 0;
     left: 0;
     z-index: 20;
+    background: url('../img/img-banner/fundo-menu.png') repeat-x;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
     padding-right: 0;
     padding-left: 0;
+    
 }
 .navbar-wrapper .navbar {
     padding-right: 15px;
@@ -33,34 +35,56 @@ body {
     width: auto;
 }
 
+.navbar-collapse.in{
+    background: #222;
+} //muda cor de fundo do menu responsivo
 
 /* CUSTOMIZAR O CARROSSEL
 -------------------------------------------------- */
 
-/* Carrossel base class */
-.carousel {
-    height: 500px;
-    margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
+
+/* ### CODIGO ANTIGO DO CARROSSEL  ###
+* Carrossel base class 
+* .carousel {
+*    height: 500px;
+*    margin-bottom: 60px;
+*}
+* Since positioning the image, we need to help out the caption
+*.carousel-caption {
+*    z-index: 10;
+*}
+*
+* Declare heights because of positioning of img element 
+*.carousel .item {
+*    height: 500px;
+*    background-color: #777;
+*}
+
+*.carousel-inner > .item > img {
+*    position: absolute;
+*    top: 0;
+*    left: 0;
+*    min-width: 100%;
+*    height: 500px;
+*}
+*/
+
+.carousel, .carousel-inner > .item {
+    width: 100%;
+    height: auto;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 500px;
-    background-color: #777;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    min-height:50%; 
+    max-height: 500px;
 }
 
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
+.carousel-container {
+    margin-left:0;
 }
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */

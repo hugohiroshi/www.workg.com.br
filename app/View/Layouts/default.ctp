@@ -59,7 +59,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                                 <span class="icon-bar"></span>
                             </button>                
                             <!-- TERMINA BOTÃO DO MENU RESPONSIVO -->
-                            <a class="navbar-brand" href="#">WorkGroup </a>                
+                            <a class="navbar-brand" href="#"><img src="../img/logo_workgroup.png" alt="logo-workgroup"/> </a>                
                       </div>
                       <div id="navbar" class="navbar-collapse collapse">                
                           <ul class="nav navbar-nav">
