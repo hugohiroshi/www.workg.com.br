@@ -107,34 +107,40 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
         <!-- CONTEUDO DO SLIDE -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Example headline.</h1>
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <img src="app/webroot/img/img-banner/banner_site_wg_1.png" alt="Primeiro slide">
+                <!-- CONTEUDO PARA COLOCAR NO MEIO DO SLIDE 
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example headline.</h1>
+                            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
                     </div>
-                </div>
+                -->
             </div>
             <div class="item">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Segundo slide">
+               <!-- CONTEUDO PARA COLOCAR NO MEIO DO SLIDE 
+                    <div class="container">
+                        <div class="carousel-caption">
+                             <h1>Another example headline.</h1>
+                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                         </div> 
                     </div>
-                </div>
+               -->
             </div>
             <div class="item">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <img src="app/webroot/img/img-banner/banner_site_wg_3.png" alt="Terceiro slide">
+                <!-- CONTEUDO PARA COLOCAR NO MEIO DO SLIDE    
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
                     </div>
-                </div>
+                -->
             </div>
         </div>
         <!-- TERMINA CONTEUDO DO SLIDE -->
@@ -156,7 +162,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
     
     
     
-	<div id="container">
+	<div id="container" class="main-container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($Description, 'http://cakephp.org'); ?></h1>
 		</div>
@@ -181,28 +187,28 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
     
        
         <div id="footer2" class="col-md-12">            
-            <div class="content-footer">                
-                    <div class="col-md-5">
-                        <h2>Gostaria de receber nossas Newsletter ?</h2>
-                        <form action="" method="post">
-                            <input class="campo-email" type="text" name="email" placeholder="E-mail" />
-                            <input class="botao-cadastro" type="button" name="cadastro" value="Cadastre-se" />
-                        </form>
-                    </div>
-                    <div class="endereco col-md-2">                 
-                        <p>Endereço</p>
-                        <p>Rua Salim Ferez, 251 <br />
-                        Campinas / SP</p>
-                    </div>  
-                    <div class="contato col-md-2">
-                        <p>Contato</p>
-                        <p>Telefone: 55(19)9999-9999<br />
-                           E-mail: email@email.com</p>
-                    </div>     
+            <div class="content-footer main-container">                                 
+                <div class="col-md-6">
+                    <h2>Gostaria de receber nossas Newsletter ?</h2>
+                    <form action="" method="post">
+                        <input class="campo-email" type="text" name="email" placeholder="E-mail" />
+                        <input class="botao-cadastro" type="button" name="cadastro" value="Cadastre-se" />
+                    </form>
+                </div>
+                <div class="endereco col-md-3">                 
+                    <p>Endereço</p>
+                    <p>Rua Salim Ferez, 251 <br />
+                    Campinas / SP</p>
+                </div>  
+                <div class="contato col-md-3">
+                    <p>Contato</p>
+                    <p>Telefone: 55(19)9999-9999<br />
+                       E-mail: email@email.com</p>
+                </div>                        
             </div> 
         </div>   
         <div id="footer3" class="col-md-12">
-            <div class="content-footer">
+            <div class="content-footer main-container">
                 <div class="copyright col-md-12">
                     <p>©copyright</p>
                 </div>
