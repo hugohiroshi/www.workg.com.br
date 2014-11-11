@@ -24,11 +24,13 @@
 
 /* CONTAINER */
 #container{
-padding-right: 15px;
-padding-left: 15px;
+    
 }
 
-
+.conteudo{
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 
 /* FOOTER */

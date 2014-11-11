@@ -118,9 +118,9 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                     </div>
                 -->
             </div>
-            <div class="item">
+ <!--            <div class="item">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Segundo slide">
-               <!-- CONTEUDO PARA COLOCAR NO MEIO DO SLIDE 
+                CONTEUDO PARA COLOCAR NO MEIO DO SLIDE 
                     <div class="container">
                         <div class="carousel-caption">
                              <h1>Another example headline.</h1>
@@ -128,8 +128,8 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                          </div> 
                     </div>
-               -->
-            </div>
+               
+            </div>-->
             <div class="item">
                 <img src="app/webroot/img/img-banner/banner_site_wg_3.png" alt="Terceiro slide">
                 <!-- CONTEUDO PARA COLOCAR NO MEIO DO SLIDE    
@@ -162,7 +162,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
     
     
     
-	<div id="container" class="main-container">
+	<div id="container" class="conteudo main-container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($Description, 'http://cakephp.org'); ?></h1>
 		</div>

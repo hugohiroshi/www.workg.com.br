@@ -11,6 +11,7 @@ body {
 /* CUSTOMIZAR O NAVBAR
 -------------------------------------------------- */
 
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
     position: absolute;
@@ -18,14 +19,13 @@ body {
     right: 0;
     left: 0;
     z-index: 20;
-    background: url('../img/img-banner/fundo-menu.png') repeat-x;
+    background: url('../img/img-banner/fundo-menu.png') repeat; /* colocar apenas repeat para pegar o fundo no menu responsivo tbm */
 }
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
     padding-right: 0;
-    padding-left: 0;
-    
+    padding-left: 0;    
 }
 .navbar-wrapper .navbar {
     padding-right: 15px;
@@ -35,9 +35,12 @@ body {
     width: auto;
 }
 
+
 .navbar-collapse.in{
-    background: #222;
+    //background: #222;
 } //muda cor de fundo do menu responsivo
+
+
 
 /* CUSTOMIZAR O CARROSSEL
 -------------------------------------------------- */
