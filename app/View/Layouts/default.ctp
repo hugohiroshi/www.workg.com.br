@@ -38,6 +38,11 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+        <!-- HTML5 Respond.js faz o IE8 suporta elementos media query em html5 -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
     
 </head>
 <body>
