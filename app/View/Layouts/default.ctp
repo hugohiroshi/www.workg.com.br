@@ -32,6 +32,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                 
                 echo $this->Html->script('jquery');
                 echo $this->Html->script('bootstrap');
+            
                 
 		
 		echo $this->fetch('meta');
