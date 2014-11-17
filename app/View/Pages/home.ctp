@@ -1,6 +1,6 @@
 
 
-<div id="content-texto-home">
+<div class="content-texto-home col-md-7">
     <h1>A WorkGroup</h1>
     <div class="content-texto-workgroup">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula 
@@ -17,17 +17,10 @@
            risus elementum faucibus. Suspendisse eu rhoncus nunc, nec consectetur ipsum.</p>
     </div>    
 </div> 
-<div id="depoimentos">
-    <div class="autor-depoimento">
-        <p>Autor</p>
-    </div>
-    <div class="content-depoimento">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Aenean vehicula laoreet condimentum. Donec rutrum dictum aliquet. 
-           Donec ac est id sapien tempus venenatis.</p>
-    </div>    
-</div> 
+ 
 
+
+<!-- Conteudo do box que pega noticias do blog workmotor -->
 <?php
 
     $numberOfPosts = 3;
@@ -92,7 +85,7 @@
 
 ?>
 
- <div id="box-feed">
+<div id="box-feed" class="col-md-2">
     <div class="titulo-feed">
         <h1>Últimas Notícias</h1>
     </div>
@@ -116,3 +109,44 @@
         <label class="texto_veja_mais"><a href="http://www.workmotor.com.br/blog/" target="_blank">VEJA MAIS >></a></label> 
     </div> 
 </div>
+<!-- Termina Conteudo do box que pega noticias do blog workmotor -->
+
+
+<!-- Começa Conteudo depoimentos -->
+<div id="depoimentos" class="col-md-3">   
+    <div class='efeito-fade'>
+        <div class="content-depoimento">
+            <div class="autor-depoimento">
+                <p>Autor</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Aenean vehicula laoreet condimentum. Donec rutrum dictum aliquet. 
+               Donec ac est id sapien tempus venenatis.</p>
+        </div>    
+        <div class="content-depoimento">
+            <div class="autor-depoimento">
+                <p>Autor2</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Aenean vehicula laoreet condimentum. Donec rutrum dictum aliquet. 
+               Donec ac est id sapien tempus venenatis.2</p>
+        </div>
+    </div>    
+</div>
+<!-- Termina Conteudo depoimentos -->
+
+
+<!-- Codigo javascript para fazer efeito fade no conteudo depoimentos -->
+<script type="text/javascript">
+	$(document).ready(
+            function(){
+                $('.efeito-fade').innerfade({
+                        animationtype: 'fade',
+                        speed: 400,
+                        timeout: 10000,
+                        type: 'random',
+                        containerheight: '1em'
+                });	
+            }
+	);
+</script>

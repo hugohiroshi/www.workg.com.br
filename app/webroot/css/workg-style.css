@@ -17,7 +17,6 @@
    }
 }
 
-
 /* CODIGO PARA FUNCIONAR O MENU RESPONSIVO ATE O TAMANHO DE 990px AO INVÉS DE SER ATE O 768px */
 @media (max-width: 990px) {
     .navbar-header {
@@ -57,14 +56,11 @@
 }
 
 
-
 /*  HEADER*/
     
 .navbar-brand{
     padding-top: 0px;
 } //tira o padding top do logo
-
- 
 
 
 /* CONTAINER */
@@ -77,46 +73,44 @@
     padding-left: 15px;
 }
 
-
 /* CONTEUDO DA PAGINA HOME */
 
-
-#content-texto-home{
-    width: 100%;
+.content-texto-home{
+    padding-left: 0px;
 }
-
-#content-texto-home h1{
+.content-texto-home h1{
     color:#145da9;
 }
 
-#content-texto-home .content-texto-workgroup{     
+.content-texto-home .content-texto-workgroup{     
     font-size: 14px;
     color:#858585;
-    text-align: justify;
+    text-align: justify;    
 }
 
-/* conteudo de depoimentos de clientes */
+/* Conteudo de Depoimentos de clientes */
 #depoimentos{
     width: 500px;
     height: 100px;
     border: 2px solid #dddddd;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-
-.autor-depoimento{
+#depoimentos .autor-depoimento{
     width: 100px;
     float: left;
-    height: 100px;
     padding: 35px 30px;
 }
 
-.content-depoimento{
+#depoimentos .content-depoimento{
     width: 450px;
     padding: 5px 5px;
     text-align: justify;
     font-size: 14px;
-    color:#858585;
+    color:#858585;    
 }
+
 /* conteudo do box de feed de noticias do blog workmotor */
 #box-feed {
     width:300px; 
@@ -124,6 +118,7 @@
     border: 2px solid #dddddd; 
     border-radius: 5px;            
     position: relative;
+    padding: 0px; 
 }
 
 #box-feed .titulo-feed{
@@ -182,8 +177,6 @@
 #box-feed .link_veja_mais .texto_veja_mais a{
     color: #145da9;                 
 }
-
-
           
 /* TERMINA CONTEUDO DA PAGINA HOME */            
 
