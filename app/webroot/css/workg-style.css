@@ -3,7 +3,7 @@
    .header-container {
        width: 100%;
        /* background: url('../img/img-banner/fundo-menu.png') repeat-x; */
-   }
+   }   
 }
 
 @media (min-width: 990px) {
@@ -14,7 +14,11 @@
    /* alinhar menu acima de 992px para direita */
    .navbar-nav{
        float: right;
-   }
+   } 
+   /* ajustar a margin left do box-feed quando o site não esta responsivo */
+   #box-feed{
+       margin-left: 40px;
+   } 
 }
 
 /* CODIGO PARA FUNCIONAR O MENU RESPONSIVO ATE O TAMANHO DE 990px AO INVÉS DE SER ATE O 768px */
@@ -52,7 +56,7 @@
     }
     .collapse.in {
         display:block !important;
-    }
+    }    
 }
 
 
@@ -69,12 +73,10 @@
 }
 
 
-
 /* CONTEUDO DA PAGINA HOME */
 
 .conteudo{
-    padding-right: 15px;
-    padding-left: 15px;
+    padding:30px 15px 0px 15px;    
 }
 
 .content-texto-home{
@@ -116,7 +118,8 @@
 /* conteudo do box de feed de noticias do blog workmotor */
 #box-feed {
     width:300px; 
-    margin:5px 0 5px 0;
+    margin-top:5px;
+    margin-bottom:5px; 
     border: 2px solid #dddddd; 
     border-radius: 5px;            
     position: relative;
@@ -181,6 +184,77 @@
 }
           
 /* TERMINA CONTEUDO DA PAGINA HOME */            
+
+
+/* COMEÇA PAGINA CONTATO */
+.form_contato{
+    margin-top: 100px;
+}
+
+.form_contato label{
+    color: #134d75;
+    font-size: 16px;
+}
+
+.form_contato input{
+    height: 25px;
+    width: 250px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #428bca;
+}
+
+.form_contato input:focus {
+    outline: none;
+}
+
+.form_contato input:hover{
+    border: 2px solid #134d75; 
+    border-radius: 2px;      
+}
+
+.form_contato .campo_ddd{
+    width: 40px;    
+}
+
+.form_contato .campo_telefone{
+    width: 206px;
+}
+
+
+.form_contato .campo_mensagem{
+    width: 250px;
+    height: 100px;    
+    border:2px solid #428bca;
+    border-radius: 2px;
+}
+
+.form_contato textarea:focus{
+    outline:none;
+}
+
+.form_contato .campo_mensagem:hover{
+    border: 2px solid #134d75;
+    border-radius: 2px;            
+}
+
+.form_contato .btn_contato{
+    width: 80px;
+    height: 27px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #1e77b1;
+    border: 2px solid #428bca;
+}
+
+.form_contato .btn_contato:hover{    
+    background: #428bca;
+    border: 2px solid #134d75;
+}
+
+/* TERMINA PAGINA CONTATO */
 
 /* FOOTER */
 #footer2{

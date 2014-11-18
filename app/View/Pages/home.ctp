@@ -44,7 +44,7 @@
 <!-- TERMINA CARROSSEL -->
 
 
-<div class="main-container conteudo">
+<div class="conteudo main-container">
     <div class="content-texto-home col-md-7">
         <h1>A WorkGroup</h1>
         <div class="content-texto-workgroup">
