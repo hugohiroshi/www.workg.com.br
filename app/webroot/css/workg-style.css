@@ -188,60 +188,95 @@
 
 /* COMEÇA PAGINA CONTATO */
 .form_contato{
-    margin-top: 100px;
+    margin-top: 150px; 
+    padding-left: 15px;
 }
 
-.form_contato label{
+.form_contato h2{
+    color: #145da9; 
+}
+
+.form_contato fieldset{
+    border: 2px solid #145da9;; 
+    width: 320px;    
+    border-radius: 5px;
+    border-style: solid;    
+    margin-bottom: 40px;    
+}
+
+.form_contato .conteudo-formulario{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;    
+}
+
+.form_contato .conteudo-formulario label{
     color: #134d75;
-    font-size: 16px;
+    font-size: 16px;   
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
-.form_contato input{
+.form_contato .conteudo-formulario input{
     height: 25px;
-    width: 250px;
-    border-radius: 2px;
+    width: 98%;
+    border-radius: 5px;
     border-style: solid;
     border-color: #428bca;
+    color: #134d75;
+    padding: 3px;
 }
 
-.form_contato input:focus {
+.form_contato .conteudo-formulario input:focus {
     outline: none;
+    background: #93d3f4;
+    color: #134d75;
 }
 
-.form_contato input:hover{
-    border: 2px solid #134d75; 
-    border-radius: 2px;      
+.form_contato .conteudo-formulario input:hover{
+    border: 2px solid #145da9; 
+    border-radius: 5px;    
+    background: #93d3f4;
+    color: #134d75;    
 }
 
-.form_contato .campo_ddd{
-    width: 40px;    
+.form_contato .conteudo-formulario .campo_ddd{
+    width: 16%;    
 }
 
-.form_contato .campo_telefone{
-    width: 206px;
+.form_contato .conteudo-formulario .campo_telefone{
+    width: 80.1%;
 }
 
 
-.form_contato .campo_mensagem{
-    width: 250px;
+.form_contato .conteudo-formulario .campo_mensagem{
+    width: 98%;
     height: 100px;    
     border:2px solid #428bca;
-    border-radius: 2px;
+    border-radius: 5px;
+    resize: none;
 }
 
-.form_contato textarea:focus{
+
+.form_contato .conteudo-formulario textarea:focus{
     outline:none;
+    background: #93d3f4;
+    color: #134d75;
 }
 
-.form_contato .campo_mensagem:hover{
-    border: 2px solid #134d75;
-    border-radius: 2px;            
+.form_contato .conteudo-formulario .campo_mensagem:hover{
+    border: 2px solid #145da9;
+    border-radius: 5px;   
+    background: #93d3f4;
+    color: #134d75;
 }
 
-.form_contato .btn_contato{
+.form_contato .conteudo-formulario .btn_enviar{
     width: 80px;
     height: 27px;
     margin-bottom: 25px;
+    margin-top: 10px;
+    padding-top: 1px;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -249,12 +284,24 @@
     border: 2px solid #428bca;
 }
 
-.form_contato .btn_contato:hover{    
+.form_contato .conteudo-formulario .btn_enviar:hover{    
     background: #428bca;
-    border: 2px solid #134d75;
+    border: 2px solid #145da9;
 }
 
+/* MENSAGEM DA ENTREGA DO FORMULARIO DA PAGINA CONTATO*/
+.msg_enviada {
+    margin-top: 150px;
+    font-size: 15px;
+    color: #428bca;
+    font-weight: bold;
+    margin-left: 265px;
+    margin-bottom: -120px;
+}
+
+
 /* TERMINA PAGINA CONTATO */
+
 
 /* FOOTER */
 #footer2{

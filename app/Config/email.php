@@ -48,12 +48,12 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'localhost',
-		'port' => 25,
+		'from' => array('jessica.silva@pequenasempresas.net' => 'My Site'),
+		'host' => 'smtp.pequenasempresas.net',
+		'port' => 587,
 		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
+		'username' => 'jessica.silva@pequenasempresas.net',
+		'password' => 'jessi5143',
 		'client' => null,
 		'log' => false,
 		//'charset' => 'utf-8',
