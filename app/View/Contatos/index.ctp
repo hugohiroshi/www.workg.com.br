@@ -16,7 +16,7 @@
         <h2>Contato</h2>
         <fieldset>
             <div class="conteudo-formulario">
-                <form action="<?php echo $this->webroot; ?>Contatos/index" method="post">
+                <form id="frm_contato" action="<?php echo $this->webroot; ?>Contatos/index" method="post">
                     <label>Nome:</label><br />
                     <input type="text" name="nome" id="contato_nome" /><br />
                     <label>Telefone:</label><br />
@@ -26,7 +26,7 @@
                     <input type="text" name="email" id="contato_email"  /><br />
                     <label>Mensagem:</label><br />
                     <textarea class="campo_mensagem" name="mensagem" id="contato_mensagem"></textarea><br />
-                    <input class="btn_enviar" type="submit" name="enviar" value="Enviar" onclick="onFormSubmit();" /><br />
+                    <input class="btn_enviar" type="button" name="enviar" value="Enviar" onclick="return onFormSubmit();" /><br />
                 </form>    
             </div>  
         </fieldset>    
@@ -44,6 +44,7 @@
         }
     }
     
+    // faz a validação dos campos do contato
     function validateForm() {
         var nome        = document.getElementById("contato_nome").value;                
         var ddd         = document.getElementById("contato_tel_ddd").value;
@@ -87,7 +88,7 @@
         return true;
     }
     
-    // Verifica se o e-mail eh um e-mail valido
+    // Verifica se o e-mail é um e-mail valido
     function IsEmail(email){
 	var filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 	if(filtro.test(email)) {
@@ -96,7 +97,7 @@
             return false;
 	}
     }
-
+   
     function mascaraTelefone( campo ) {
         
         function trata( valor,  isOnBlur ) {

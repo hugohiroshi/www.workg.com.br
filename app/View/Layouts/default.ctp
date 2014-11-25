@@ -72,7 +72,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#about">Produtos e Serviços</a></li>
-                                <li><a href="#contact">Contato</a></li>
+                                <li><a href="contatos">Contato</a></li>
                                 <li><a href="#contact">Sobre</a></li>
                                 <li><a href="#contact">Parceiros</a></li>
                                 <li><a href="#contact">Trabalhe Conosco</a></li>                

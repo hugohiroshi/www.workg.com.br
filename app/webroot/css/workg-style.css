@@ -303,6 +303,19 @@
 /* TERMINA PAGINA CONTATO */
 
 
+/* COMEÇA PAGINA PRODUTOS E SERVIÇOS */
+
+.prod_servicos{
+    margin-top: 150px; 
+    padding-left: 15px;
+}
+
+prod_servicos h2{
+    color: #145da9; 
+}
+
+/* TERMINA PAGINA PRODUTOS E SERVIÇOS */
+
 /* FOOTER */
 #footer2{
     width: 100%;    
