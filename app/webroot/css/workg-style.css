@@ -299,20 +299,45 @@
     margin-bottom: -120px;
 }
 
-
 /* TERMINA PAGINA CONTATO */
 
 
 /* COMEÇA PAGINA PRODUTOS E SERVIÇOS */
 
 .prod_servicos{
-    margin-top: 150px; 
-    padding-left: 15px;
+    margin-top: 150px;        
 }
 
-prod_servicos h2{
-    color: #145da9; 
+.prod_servicos h2{
+    color: #145da9;
+    margin-bottom: 20px;
 }
+
+.prod_servicos .sobre_prod_serv{
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: justify;
+}
+
+.prod_servicos .content_produto{
+    margin-bottom: 10px;
+}
+
+.prod_servicos .produtos{
+    margin-left:30px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.prod_servicos .produtos .separa_produto{
+    padding: 0px;
+    text-align: justify;
+}
+.prod_servicos .produtos .separa_produto .img_produto{
+    padding: 0px;
+    text-align: justify;
+}
+
 
 /* TERMINA PAGINA PRODUTOS E SERVIÇOS */
 

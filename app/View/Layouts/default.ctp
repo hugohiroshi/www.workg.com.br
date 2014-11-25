@@ -66,12 +66,12 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                                 <span class="icon-bar"></span>
                             </button>                
                             <!-- TERMINA BOTÃO DO MENU RESPONSIVO -->
-                            <a class="navbar-brand" href="#"><img src="../img/logo_workgroup.png" alt="logo-workgroup"/> </a>                
+                            <a class="navbar-brand" href="/"><img src="../img/logo_workgroup.png" alt="logo-workgroup"/> </a>                
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">                
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#about">Produtos e Serviços</a></li>
+                                <li class="active"><a href="/">Home</a></li>
+                                <li><a href="produtosServicos">Produtos e Serviços</a></li>
                                 <li><a href="contatos">Contato</a></li>
                                 <li><a href="#contact">Sobre</a></li>
                                 <li><a href="#contact">Parceiros</a></li>
