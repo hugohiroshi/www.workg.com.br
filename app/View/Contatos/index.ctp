@@ -12,7 +12,7 @@
 
 
 <div class="main-container">
-    <div class="form_contato">
+    <div class="form_contato col-md-5">
         <h2>Contato</h2>
         <fieldset>
             <div class="conteudo-formulario">

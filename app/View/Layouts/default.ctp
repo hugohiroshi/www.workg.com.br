@@ -33,6 +33,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                 echo $this->Html->script('jquery');
                 echo $this->Html->script('bootstrap');
                 echo $this->Html->script('jquery.innerfade');
+                echo $this->Html->script('bootstrap-filestyle');
             
                 
 		
@@ -75,7 +76,7 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                                 <li><a href="contatos">Contato</a></li>
                                 <li><a href="#contact">Sobre</a></li>
                                 <li><a href="#contact">Parceiros</a></li>
-                                <li><a href="#contact">Trabalhe Conosco</a></li>                
+                                <li><a href="trabalheConosco">Trabalhe Conosco</a></li>                
                                 <!-- MENU DROPDOWN
                                     <li class="dropdown">
                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
