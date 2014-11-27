@@ -4,22 +4,22 @@ App::uses('CakeEmail', 'Network/Email');
 
 class TrabalheConoscoController extends AppController{
     
-    public $name = 'TrabalheConosco';
-    public $uses = array();
+//    public $name = 'TrabalheConosco';
+//    public $uses = array();
     
     public function index(){
         
-        echo pr($this->request->data);
+       echo pr($this->request->data);
         
         
         
         if ($this->request->is('post')) {
-            die();
-                $filename = APP."webroot".DS."img".DS."curriculo".DS.$this->data['TrabalheConosco']['file']['name']; 
+           die();
+                $filename = APP."webroot".DS."img".DS."curriculo".DS.$this->request->data['TrabalheConosco']['curriculo']['name']; 
                 /* copy uploaded file */
-                if (move_uploaded_file($this->data['TrabalheConosco']['file']['tmp_name'],$filename)) {
+                if (move_uploaded_file($this->request->data['TrabalheConosco']['curriculo']['tmp_name'],$filename)) {
                     /* save message to session */
-                    $this->Session->setFlash('File uploaded successfuly. You can view it <a href="/app/webroot/img/curriculo'.$this->data['TrabalheConosco']['file']['name'].'">here</a>.');
+                    $this->Session->setFlash('File uploaded successfuly. You can view it <a href="/app/webroot/img/curriculo/'.$this->request->data['TrabalheConosco']['curriculo']['name'].'">here</a>.');
                     /* redirect */
                     $this->redirect(array('action' => 'index'));
                 } else {

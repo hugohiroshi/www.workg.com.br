@@ -30,7 +30,7 @@
         <div class="form_trabalhe_conosco col-md-5">
             <fieldset>
                 <div class="alinhar_conteudo">
-                    <form action="<?php echo $this->webroot; ?>TrabalheConosco/index" method="post" id="frm_trabalhe_conosco">
+                    <form action="<?php echo $this->webroot; ?>TrabalheConosco/index" method="post" enctype="application/x-www-form-urlencoded" id="frm_trabalhe_conosco">
                         <label>Nome:</label><br />
                         <input type="text" name="nome" id="nome" /><br />
                         <label>E-mail:</label><br />
