@@ -30,7 +30,7 @@
         <div class="form_trabalhe_conosco col-md-5">
             <fieldset>
                 <div class="alinhar_conteudo">
-                    <form action="<?php echo $this->webroot; ?>TrabalheConosco/index" method="post" enctype="application/x-www-form-urlencoded" id="frm_trabalhe_conosco">
+                    <form action="<?php echo $this->webroot; ?>TrabalheConosco/index" method="post" enctype="multipart/form-data" id="frm_trabalhe_conosco">
                         <label>Nome:</label><br />
                         <input type="text" name="nome" id="nome" /><br />
                         <label>E-mail:</label><br />
@@ -47,11 +47,13 @@
                         <div class="input-group">
                             <span class="input-group-btn">
                                 <span class="btn btn-primary btn-file">
-                                    Currículo <input type="file" name="curriculo" id="curriculo" multiple />
+                                    Currículo 
+                                    <input type="file" name="data[curriculo]" id="curriculo">
                                 </span>
                             </span>
                             <input type="text" class="form-control" readonly  />
                         </div>
+                        
                         <input class="btn_enviar" type="button" name="enviar" value="Enviar"  onclick="return onFormSubmit();"  /><br />
                     </form>    
                 </div>    
@@ -134,7 +136,7 @@
         }
         
         if (!IsEmail(repetir_email)) {
-            alert('O E-mail informado é inválido.');
+            alert('O E-mail informado no campo Repetir E-mail é inválido.');
             document.getElementById("repetir_email").focus();
             return false;
         }
