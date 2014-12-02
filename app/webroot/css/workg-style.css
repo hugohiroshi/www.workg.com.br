@@ -322,7 +322,7 @@
     font-size: 15px;
     color: #428bca;
     font-weight: bold;
-    margin-left: 265px;
+    margin-left: 20%;
     margin-bottom: -120px;
 }
 
@@ -542,6 +542,15 @@
 
 
 /* TERMINA PAGINA TRABALHE CONOSCO */
+
+
+/* COMEÇA PAGINA SOBRE  */
+
+.pagina_sobre{
+    margin-top: 130px;
+}
+
+/* TERMINA PAGINA SOBRE */
 
 
 /* FOOTER */
