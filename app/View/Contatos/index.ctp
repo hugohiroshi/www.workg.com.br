@@ -12,24 +12,31 @@
 
 
 <div class="main-container">
-    <div class="form_contato col-md-5">
+    <div class="form_contato col-md-12">
         <h2>Contato</h2>
-        <fieldset>
-            <div class="conteudo-formulario">
-                <form id="frm_contato" action="<?php echo $this->webroot; ?>Contatos/index" method="post">
-                    <label>Nome:</label><br />
-                    <input type="text" name="nome" id="contato_nome" /><br />
-                    <label>Telefone:</label><br />
-                    <input placeholder="(00)" class="campo_ddd" type="text" name="ddd" id="contato_tel_ddd" onkeypress="return numeros(this);" maxlength="2" />
-                    <input placeholder="0000-0000" class="campo_telefone" type="text" name="telefone" id="contato_telefone" onkeydown="mascaraTelefone(this);" /><br />
-                    <label>E-mail:</label><br />
-                    <input type="text" name="email" id="contato_email"  /><br />
-                    <label>Mensagem:</label><br />
-                    <textarea class="campo_mensagem" name="mensagem" id="contato_mensagem"></textarea><br />
-                    <input class="btn_enviar" type="button" name="enviar" value="Enviar" onclick="return onFormSubmit();" /><br />
-                </form>    
-            </div>  
-        </fieldset>    
+        <div class="sobre_contato col-md-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. </p>            
+        </div> 
+        <div class="conteudo_contato col-md-5">
+            <fieldset>
+                <div class="conteudo-formulario">
+                    <form id="frm_contato" action="<?php echo $this->webroot; ?>Contatos/index" method="post">
+                        <label>Nome:</label><br />
+                        <input type="text" name="nome" id="contato_nome" /><br />
+                        <label>Telefone:</label><br />
+                        <input placeholder="(00)" class="campo_ddd" type="text" name="ddd" id="contato_tel_ddd" onkeypress="return numeros(this);" maxlength="2" />
+                        <input placeholder="0000-0000" class="campo_telefone" type="text" name="telefone" id="contato_telefone" onkeydown="mascaraTelefone(this);" /><br />
+                        <label>E-mail:</label><br />
+                        <input type="text" name="email" id="contato_email"  /><br />
+                        <label>Mensagem:</label><br />
+                        <textarea class="campo_mensagem" name="mensagem" id="contato_mensagem"></textarea><br />
+                        <input class="btn_enviar" type="button" name="enviar" value="Enviar" onclick="return onFormSubmit();" /><br />
+                    </form>    
+                </div>  
+            </fieldset>   
+        </div>    
     </div>    
 </div>
 

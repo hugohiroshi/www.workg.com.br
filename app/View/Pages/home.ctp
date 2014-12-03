@@ -158,9 +158,9 @@
 
 
     <!-- Começa Conteudo depoimentos -->
-    <div id="depoimentos" class="col-md-3">   
+    <div id="depoimentos" class="col-md-8">
         <div class='efeito-fade'>
-            <div class="content-depoimento">
+            <div class="content-depoimento depoimento">
                 <div class="autor-depoimento">
                     <p>Autor</p>
                 </div>
@@ -168,7 +168,7 @@
                    Aenean vehicula laoreet condimentum. Donec rutrum dictum aliquet. 
                    Donec ac est id sapien tempus venenatis.</p>
             </div>    
-            <div class="content-depoimento">
+            <div class="content-depoimento depoimento">
                 <div class="autor-depoimento">
                     <p>Autor2</p>
                 </div>
@@ -176,7 +176,7 @@
                    Aenean vehicula laoreet condimentum. Donec rutrum dictum aliquet. 
                    Donec ac est id sapien tempus venenatis.2</p>
             </div>
-        </div>    
+        </div>   
     </div>
     <!-- Termina Conteudo depoimentos -->
 </div>

@@ -69,7 +69,6 @@ class TrabalheConoscoController extends AppController{
                 if(isset($this->request->data['curriculo'])) {
                     $nomeArquivo = $this->request->date['curriculo']['name'];
                     $novoNomeArquivo = md5($nomeArquivo.date("dmyHis"));
-                    $tamanho = $this->request->data['curriculo']['size'];
                 }
                 
                 $nome = $this->request->data['nome'];
@@ -91,7 +90,7 @@ class TrabalheConoscoController extends AppController{
                     $Email->subject('Trabalhe Conosco WorkGroup');
                     $Email->send(" Nome: ".$this->request->data['nome']."\n E-mail: ".$this->request->data['email']."\n Telefone: (".$this->request->data['ddd'].") ".$this->request->data['telefone'].
                             "\n Cidade: ".$this->request->data['cidade']."\n Estado: ".$this->request->data['estado'].
-                            "\n Mensagem: ".$this->request->data['mensagem']."\n Curr&iacute;culo: <a href=".'/app/webroot/img/curriculo/'.$novoArquivo.">Visualizar Currículo</a>");              
+                            "\n Mensagem: ".$this->request->data['mensagem']."\n Curr&iacute;culo: <a href=".APP."webroot".DS."img".DS."curriculo".DS.$novoArquivo.">Visualizar Currículo</a>");              
                     $this->Session->setFlash('<p class="msg_enviada">Seu cadastro foi enviado com sucesso!</p> ');
                 }
                 $this->redirect(array('action' => 'index'));

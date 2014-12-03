@@ -2,7 +2,17 @@
 @media (min-width: 320px) and (max-width: 479px) {    
     .trabalhe_conosco .form_trabalhe_conosco .label_estado{
         margin-right: 7%;
+    }   
+    
+    .form_contato{   
+        width: 110%;           
     }
+    
+    #depoimentos  {
+        height: 110px;
+        width: 120%;
+    }
+    
 }
 
 @media (min-width: 480px) and (max-width: 639px) {    
@@ -10,12 +20,28 @@
         margin-right: 17%;
     }
     
+    .form_contato {        
+        width: 80%;     
+    }    
+    #depoimentos  {
+        height: 40px;
+        width: 120%;
+    }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {    
-    .trabalhe_conosco .form_trabalhe_conosco .label_estado{
-        margin-right: 21%;
+    .trabalhe_conosco .form_trabalhe_conosco{
+        width: 70%; 
     }
+    
+    .trabalhe_conosco .form_trabalhe_conosco .label_estado{
+        margin-right: 17%;
+    }
+    
+    .form_contato {        
+        width: 60%;     
+    }
+        
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -24,8 +50,16 @@
         /* background: url('../img/img-banner/fundo-menu.png') repeat-x; */
     }   
    
+    .trabalhe_conosco .form_trabalhe_conosco{
+        width: 60%; 
+    }
+    
     .trabalhe_conosco .form_trabalhe_conosco .label_estado{
-        margin-right: 23%;
+        margin-right: 18%;
+    }
+    
+    .form_contato {        
+        width: 50%;     
     }
 }
 
@@ -120,23 +154,27 @@
 }
 
 /* Conteudo de Depoimentos de clientes */
-#depoimentos{
-    width: 500px;
-    height: 100px;
-    border: 2px solid #dddddd;
+#depoimentos{  
+    margin-top: 20px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20%;
+    padding: 0px;
+}
+
+#depoimentos .depoimento{
+    width: 65%;
+    border: 2px solid #dddddd;
 }
 
 #depoimentos .autor-depoimento{
     width: 100px;
     float: left;
-    padding: 35px 30px;
+    padding: 5% 30px;
 }
 
 #depoimentos .content-depoimento{
-    width: 450px;
-    padding: 5px 5px;
+    width: 85%;
+    padding: 10px 5px 0px 5px;
     text-align: justify;
     font-size: 14px;
     color:#858585;    
@@ -215,17 +253,27 @@
 
 /* COMEÇA PAGINA CONTATO */
 .form_contato{
-    margin-top: 150px; 
+    margin-top: 130px; 
     padding-left: 15px;
 }
 
 .form_contato h2{
     color: #145da9; 
+    margin-bottom: 20px;
+}
+
+.form_contato .sobre_contato{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.form_contato .conteudo_contato{
+    padding: 0px;
 }
 
 .form_contato fieldset{
-    border: 2px solid #145da9;; 
-    width: 100%;    
+    border: 2px solid #145da9;
+    width: 90%;    
     border-radius: 5px;
     border-style: solid;    
     margin-bottom: 40px;    
@@ -272,7 +320,7 @@
 }
 
 .form_contato .conteudo-formulario .campo_telefone{
-    width: 80.1%;
+    width: 60%;
 }
 
 
@@ -322,7 +370,7 @@
     font-size: 15px;
     color: #428bca;
     font-weight: bold;
-    margin-left: 20%;
+    margin-left: 20%;    
     margin-bottom: -120px;
 }
 
@@ -353,12 +401,13 @@
 .prod_servicos .produtos{
     margin-left:30px;
     padding: 0px;
-    text-align: justify;
+    text-align: justify;    
 }
 
 .prod_servicos .produtos .separa_produto{
     padding: 0px;
     text-align: justify;
+    margin-bottom: 20px;
 }
 .prod_servicos .produtos .separa_produto .img_produto{
     padding: 0px;
@@ -455,8 +504,7 @@
 
 .trabalhe_conosco .form_trabalhe_conosco .label_estado{
     float: right;
-    position: relative;    
-    
+    position: relative;        
 }
 
 .trabalhe_conosco .form_trabalhe_conosco .campo_estado{
@@ -531,6 +579,7 @@
   cursor: inherit;
   display: block;  
 }
+
 .trabalhe_conosco .form_trabalhe_conosco input[readonly] {
   background-color: white !important;
   cursor: text !important;
@@ -550,7 +599,51 @@
     margin-top: 130px;
 }
 
+.pagina_sobre h2{
+    color: #145da9;
+    margin-bottom: 20px;
+}
+
+.sobre_empresa{
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: justify;
+}
+
+
+
 /* TERMINA PAGINA SOBRE */
+
+
+/* COMEÇA PAGINA PARCEIROS  */
+
+.pagina_parceiros{
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+
+.pagina_parceiros h2{
+    color: #145da9;
+    margin-bottom: 20px;
+}
+
+.pagina_parceiros .sobre_parceiros{
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: justify;
+}
+
+.pagina_parceiros .logo_parceiros{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pagina_parceiros .logo_parceiros img{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* TERMINA PAGINA PARCEIROS */
 
 
 /* FOOTER */

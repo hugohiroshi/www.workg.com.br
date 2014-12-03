@@ -74,8 +74,8 @@ $Description = __d('cake_dev', 'WorkGroup | Sistemas para Oficinas e Autopeças'
                                 <li class="active"><a href="/">Home</a></li>
                                 <li><a href="produtosServicos">Produtos e Serviços</a></li>
                                 <li><a href="contatos">Contato</a></li>
-                                <li><a href="#contact">Sobre</a></li>
-                                <li><a href="#contact">Parceiros</a></li>
+                                <li><a href="sobre">Sobre</a></li>
+                                <li><a href="parceiros">Parceiros</a></li>
                                 <li><a href="trabalheConosco">Trabalhe Conosco</a></li>                
                                 <!-- MENU DROPDOWN
                                     <li class="dropdown">
