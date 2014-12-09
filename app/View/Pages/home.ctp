@@ -57,9 +57,7 @@
                nisl ac risus.</p>
             <p>Sed non sapien quam. Nam molestie sodales elit, id fringilla ipsum dignissim a.
                Sed purus quam, luctus sed aliquet at, blandit malesuada dui. Donec auctor nisi 
-               turpis. Donec luctus tortor nec urna viverra convallis. Vestibulum condimentum 
-               ipsum at facilisis vulputate. In ut interdum odio. Suspendisse dictum metus et 
-               risus elementum faucibus. Suspendisse eu rhoncus nunc, nec consectetur ipsum.</p>
+               turpis. Donec luctus tortor nec urna viverra convallis.</p>
         </div>    
     </div> 
 
