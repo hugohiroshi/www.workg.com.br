@@ -11,8 +11,8 @@
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                 mollit anim id est laborum</p>
         </div>    
-        <div class="produtos col-md-12">
-            <div class="separa_produto col-md-6">
+        <div class="produtos col-md-11">
+            <div class="separa_produto col-md-6 separa_produto-bg">
                 <div class="img_produto col-md-4">
                     <img src="../img/teste.png" />
                 </div>
@@ -39,7 +39,7 @@
             </div>  
         </div>
         
-        <div class="produtos col-md-12">
+        <div class="produtos espaco_final col-md-11">
             <div class="separa_produto col-md-6">
                 <div class="img_produto col-md-4">
                     <img src="../img/teste.png" />
@@ -54,7 +54,7 @@
             </div>    
 
 
-            <div class="separa_produto col-md-6">
+            <div class="separa_produto col-md-6 separa_produto-bg">
                 <div class="img_produto col-md-4">
                     <img src="../img/teste.png" />
                 </div>

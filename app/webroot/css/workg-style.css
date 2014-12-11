@@ -368,7 +368,7 @@
 .msg_enviada {
     margin-top: 150px;
     font-size: 15px;
-    color: #428bca;
+    color: #121CCA;
     font-weight: bold;
     margin-left: 20%;    
     margin-bottom: -120px;
@@ -396,6 +396,7 @@
 
 .prod_servicos .content_produto{
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .prod_servicos .produtos{
@@ -405,13 +406,20 @@
 }
 
 .prod_servicos .produtos .separa_produto{
-    padding: 0px;
-    text-align: justify;
-    margin-bottom: 20px;
+    padding: 10px;
+    text-align: justify;    
 }
 .prod_servicos .produtos .separa_produto .img_produto{
     padding: 0px;
     text-align: justify;
+}
+
+.prod_servicos .produtos .separa_produto-bg{
+    background: #eef2f5;    
+}
+
+.prod_servicos .espaco_final{
+    margin-bottom: 20px;
 }
 
 /* TERMINA PAGINA PRODUTOS E SERVIÇOS */
